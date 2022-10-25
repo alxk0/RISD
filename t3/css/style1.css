@@ -1,0 +1,65 @@
+body {
+	background-color: #F8F7F1;
+	font-family: "IBM Plex Serif";
+	font-size: 15px;
+	color: #07080E;
+	margin: 0px;
+}
+a:link { text-decoration: none; color:  #07080E;}
+a:visited { text-decoration: none; color:  #07080E;}
+a:hover { text-decoration: none; color: #F8F7F1; background-color: #07080E; }
+a:active { text-decoration: none; color:  #07080E;}
+a {
+    text-decoration: none;
+}
+.sticky {
+	position: sticky;
+	top: 0;
+	background-color: #F8F7F1;
+	color: #07080E;
+	padding: 11px;
+	height: 40px;
+	width: 100%;
+	border: 0px solid blue;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr 0.2fr 1fr 0.2fr;
+	grid-template-rows: auto;
+	gap: 10px;
+	width: 100%;
+}
+.grid > div{
+	border: 0px solid green;
+}
+.head1 {
+	font-size: 20px;
+}
+.head2 {
+	font-size: 30px;
+}
+.text01a {
+	font-family: "IBM Plex Sans";
+	font-size: 13px;
+	line-height: 1.5;
+}
+.text01b {
+	font-family: "IBM Plex Sans";
+	font-size: 10px;
+	line-height: 1.3;
+}
+.text02a {
+	font-family: "IBM Plex Serif";
+	font-size: 13px;
+	line-height: 1.5;
+}
+.text02b {
+	font-family: "IBM Plex Serif";
+	font-size: 10px;
+	line-height: 1.3;
+}
+@media (max-width: 700px) {
+  .grid{
+  	grid-template-columns: 0.01fr 2fr 0.01fr 0.5fr 0.01fr;
+  }
+}
