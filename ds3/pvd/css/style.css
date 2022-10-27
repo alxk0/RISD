@@ -28,22 +28,16 @@ a {
 }
 .grid {
 	display: grid;
-	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
 	grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-	border: 1px solid white;
+	border: 0px solid greenyellow;
 	gap: 5px;
-	width: 100%;
 }
 .grid > div {
 	border: 1px solid white;
 }
-.left {
-	font-size: 30px; 
-	font-weight: 500;
-	text-align: right;
-	padding-right: 25px;
-}
-.right {
-		font-size: 25px;
-		padding-top: 4px;
+.cell {
+	font-size: 20px; 
+	text-align: center;
+	vertical-align: middle;
 }
