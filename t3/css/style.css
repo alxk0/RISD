@@ -24,13 +24,17 @@ a {
 }
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 4fr 0.1fr;
+	grid-template-columns: 1fr 4fr 1fr;
 	grid-template-rows: auto;
 	gap: 15px;
 	width: 100%;
 }
 .grid > div{
 	border: 0px solid green;
+}
+.right {
+	padding: 7px;
+
 }
 .nest {
 	display: grid;
@@ -43,10 +47,11 @@ a {
 	height: 100px;
 }
 .head1 {
-	font-size: 25px;
+	font-size: 22px;
 }
 .head2 {
 	font-size: 30px;
+	padding-top: 7%;
 }
 .text01 {
 	font-family: "IBM Plex Sans";
@@ -57,4 +62,7 @@ a {
 	font-family: "IBM Plex Sans";
 	font-size: 10px;
 	line-height: 1.2;
+}
+.indent {
+  text-indent: 50px;
 }
