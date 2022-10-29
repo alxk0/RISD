@@ -9,9 +9,6 @@ a:link { text-decoration: none; color:  #07080E;}
 a:visited { text-decoration: none; color:  #07080E;}
 a:hover { text-decoration: none; color: #F8F7F1; background-color: #07080E; }
 a:active { text-decoration: none; color:  #07080E;}
-a {
-    text-decoration: none;
-}
 .sticky {
 	position: sticky;
 	top: 0;
