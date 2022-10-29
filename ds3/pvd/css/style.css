@@ -28,8 +28,8 @@ a {
 }
 .grid {
 	display: grid;
-	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-	grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+	grid-template-columns: repeat(16, 100px);
+	grid-template-rows: repeat(11, 100px);
 	border: 0px solid greenyellow;
 	gap: 5px;
 }
@@ -39,5 +39,53 @@ a {
 .cell {
 	font-size: 20px; 
 	text-align: center;
-	vertical-align: middle;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__window {
+  position: relative;
+  background-color: white;
+  padding: 4em 2em;
+}
+.modal__close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+#modal:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+@media (max-width: 1440px) {
+  .grid{
+  	grid-template-columns: repeat(13, 100px);
+  	grid-template-rows: repeat(15, 100px);
+  }
+}
+@media (max-width: 768px) {
+  .grid{
+  	grid-template-columns: repeat(7, 100px);
+  	grid-template-rows: repeat(32, 100px);
+  }
+}
+@media (max-width: 414px) {
+  .grid{
+  	grid-template-columns: repeat(3, 100px);
+  	grid-template-rows: repeat(32, 100px);
+  }
 }
