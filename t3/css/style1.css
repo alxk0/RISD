@@ -46,12 +46,12 @@ a:active { text-decoration: none; color:  #07080E;}
 }
 .text02a {
 	font-family: 'Crimson Text', serif;
-	font-size: min(max(1rem, 4vw), 22px);
+	font-size: min(max(1rem, 4vw), 25px);
 	line-height: 1.2;
 }
 .text02b {
 	font-family: 'Crimson Text', serif;
-	font-size: min(max(1rem, 4vw), 15px);
+	font-size: min(max(1rem, 4vw), 17px);
 	line-height: 1.1;
 	padding: 5px;
 }
