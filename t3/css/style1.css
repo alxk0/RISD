@@ -27,7 +27,7 @@ a:active { text-decoration: none; color:  #07080E;}
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr;
 	grid-template-rows: auto;
-	gap: 10px;
+	gap: 0px;
 	width: 100%;
 }
 .grid > div{
@@ -46,7 +46,7 @@ a:active { text-decoration: none; color:  #07080E;}
 .text02a {
 	font-family: 'Crimson Text', serif;
 	font-size: min(max(1rem, 4vw), 22px);
-	line-height: 1.5;
+	line-height: 1.2;
 }
 .text02b {
 	font-family: 'Crimson Text', serif;
@@ -56,4 +56,10 @@ a:active { text-decoration: none; color:  #07080E;}
 }
 .responsive{
 	width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	  .grid {
+		display: grid;
+		grid-template-columns: 0.1fr 5fr 1fr;
+	}
 }
