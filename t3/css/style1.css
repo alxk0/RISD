@@ -7,7 +7,7 @@ html{
 }
 body {
 	background-color: #F8F7F1;
-	margin: 0px;
+	margin: 20px;
 }
 a:link { text-decoration: none; color:  #07080E;}
 a:visited { text-decoration: none; color:  #07080E;}
@@ -18,8 +18,8 @@ a:active { text-decoration: none; color:  #07080E;}
 	top: 0;
 	background-color: #F8F7F1;
 	color: #07080E;
-	padding: 11px;
-	height: 40px;
+	padding: 0px;
+	height: 44px;
 	width: 100%;
 	border: 0px solid blue;
 }
@@ -42,7 +42,7 @@ a:active { text-decoration: none; color:  #07080E;}
 	font-family: "IBM Plex Sans";
 	font-size: min(max(1rem, 4vw), 15px);
 	line-height: 1.2;
-	padding: 15px;
+	padding-left: 15px;
 }
 .text02a {
 	font-family: 'Crimson Text', serif;
@@ -53,7 +53,7 @@ a:active { text-decoration: none; color:  #07080E;}
 	font-family: 'Crimson Text', serif;
 	font-size: min(max(1rem, 4vw), 17px);
 	line-height: 1.1;
-	padding: 15px;
+	padding-left: 15px;
 }
 .responsive{
 	width: 100%;
