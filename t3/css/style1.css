@@ -25,7 +25,7 @@ a:active { text-decoration: none; color:  #07080E;}
 }
 .grid {
 	display: grid;
-	grid-template-columns: 0.75fr 5fr 1fr;
+	grid-template-columns: 0.75fr 5fr 0.75fr;
 	grid-template-rows: auto;
 	gap: 0px;
 	width: 100%;
