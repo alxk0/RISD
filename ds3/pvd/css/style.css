@@ -39,7 +39,6 @@ a:active { text-decoration: none; color:  #1B1B1B;}
 	background-size: 100px 100px;
 }
 .image {
-
 }
 a.fill-div {
     display: block;
@@ -47,30 +46,45 @@ a.fill-div {
     width: 100%;
     text-decoration: none;
 }
-#modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 300ms ease-in;
+	-moz-transition: opacity 300ms ease-in;
+	transition: opacity 300ms ease-in;
+	pointer-events: none;
 }
-.modal__window {
-  position: relative;
-  background-color: white;
-  padding: 0em 0.1em;
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
 }
-.modal__close {
-  position: absolute;
-  top: -30px;
-  right: 0;
+.modalDialog > div {
+	width: 100%;
+	position: relative;
+	margin: 10% auto;
 }
-#modal:not(:target) {
-    visibility: hidden;
-    opacity: 0;
+.close {
+  padding: 0;
+	color:red;
+	line-height: 25px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 0px;
+	width: 24px;
+	text-decoration: none;
+  background:none;
+	font-weight: bold;
+}
+.close:hover { 
+color: #EA4436;
 }
 @media (max-width: 1440px) {
   .grid{
