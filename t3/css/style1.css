@@ -2,7 +2,7 @@ html{
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 	font-size: min(max(1rem, 4vw), 27px);
-	line-height: 1.1;
+	line-height: 1.2;
 	color: #07080E;
 }
 body {
@@ -25,7 +25,7 @@ a:active { text-decoration: none; color:  #07080E;}
 }
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-columns: 0.75fr 5fr 1fr;
 	grid-template-rows: auto;
 	gap: 0px;
 	width: 100%;
@@ -42,7 +42,7 @@ a:active { text-decoration: none; color:  #07080E;}
 	font-family: "IBM Plex Sans";
 	font-size: min(max(1rem, 4vw), 15px);
 	line-height: 1.1;
-	padding: 5px;
+	padding: 15px;
 }
 .text02a {
 	font-family: 'Crimson Text', serif;
@@ -53,7 +53,7 @@ a:active { text-decoration: none; color:  #07080E;}
 	font-family: 'Crimson Text', serif;
 	font-size: min(max(1rem, 4vw), 17px);
 	line-height: 1.1;
-	padding: 5px;
+	padding: 15px;
 }
 .responsive{
 	width: 100%;
