@@ -25,7 +25,7 @@ a:active { text-decoration: none; color:  #07080E;}
 }
 .grid {
 	display: grid;
-	grid-template-columns: 0.75fr 5fr 0.75fr;
+	grid-template-columns: 0.75fr 4fr 1fr;
 	grid-template-rows: auto;
 	gap: 0px;
 	width: 100%;
@@ -61,6 +61,6 @@ a:active { text-decoration: none; color:  #07080E;}
 @media only screen and (max-width: 1100px) {
 	  .grid {
 		display: grid;
-		grid-template-columns: 0.1fr 5fr 1fr;
+		grid-template-columns: 0.1fr 5fr 0.1fr;
 	}
 }
