@@ -1,5 +1,5 @@
 html {
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 body {
 			margin: 0;
@@ -26,13 +26,13 @@ a:active { text-decoration: none; color:  #1B1B1B;}
 }
 .grid {
 	display: grid;
-	grid-template-columns: repeat(16, 100px);
+	grid-template-columns: repeat(17, 100px);
 	grid-template-rows: repeat(11, 100px);
 	border: 0px solid greenyellow;
 	gap: 5px;
 }
 .grid > div {
-	border: 0px solid white;
+	border: 1px solid white;
 }
 .cell {
 	font-size: 20px; 
@@ -90,21 +90,33 @@ a.fill-div {
 .close:hover { 
 color: #EA4436;
 }
+@media (max-width: 1600px) {
+  .grid{
+  	grid-template-columns: repeat(14, 100px);
+  	grid-template-rows: repeat(15, 100px);
+  }
+}
 @media (max-width: 1440px) {
   .grid{
-  	grid-template-columns: repeat(13, 100px);
+  	grid-template-columns: repeat(12, 100px);
   	grid-template-rows: repeat(15, 100px);
+  }
+}
+@media (max-width: 1000px) {
+  .grid{
+  	grid-template-columns: repeat(8, 100px);
+  	grid-template-rows: repeat(32, 100px);
   }
 }
 @media (max-width: 768px) {
   .grid{
-  	grid-template-columns: repeat(7, 100px);
+  	grid-template-columns: repeat(6, 100px);
   	grid-template-rows: repeat(32, 100px);
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 600px) {
   .grid{
-  	grid-template-columns: repeat(3, 100px);
+  	grid-template-columns: repeat(5, 100px);
   	grid-template-rows: repeat(32, 100px);
   }
 }
