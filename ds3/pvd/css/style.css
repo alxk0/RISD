@@ -11,7 +11,7 @@ body {
 }
 a:link { text-decoration: none; color:  #D9D9D9;}
 a:visited { text-decoration: none; color:  #D9D9D9;}
-a:hover { text-decoration: none; color: #1B1B1B; background-color: rgba(0,255,0,0.3);}
+a:hover { text-decoration: none; color: #1B1B1B; background-color: rgba(0,100,100,0.5);}
 a:active { text-decoration: none; color:  #1B1B1B;}
 a#x:hover {
     background-color: rgba(0,0,0,0);
