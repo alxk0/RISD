@@ -29,8 +29,8 @@ a#x:hover {
 }
 .grid {
 	display: grid;
-	grid-template-columns: repeat(17, 100px);
-	grid-template-rows: repeat(11, 100px);
+	grid-template-columns: repeat(15, 100px);
+	grid-template-rows: repeat(8, 100px);
 	border: 0px solid greenyellow;
 	gap: 5px;
 }
@@ -99,24 +99,24 @@ color: #EA4436;
 @media (max-width: 1440px) {
   .grid{
   	grid-template-columns: repeat(12, 100px);
-  	grid-template-rows: repeat(15, 100px);
+  	grid-template-rows: repeat(10, 100px);
   }
 }
 @media (max-width: 1000px) {
   .grid{
   	grid-template-columns: repeat(8, 100px);
-  	grid-template-rows: repeat(32, 100px);
+  	grid-template-rows: repeat(15, 100px);
   }
 }
 @media (max-width: 768px) {
   .grid{
   	grid-template-columns: repeat(6, 100px);
-  	grid-template-rows: repeat(32, 100px);
+  	grid-template-rows: repeat(20, 100px);
   }
 }
 @media (max-width: 600px) {
   .grid{
   	grid-template-columns: repeat(5, 100px);
-  	grid-template-rows: repeat(32, 100px);
+  	grid-template-rows: repeat(24, 100px);
   }
 }
