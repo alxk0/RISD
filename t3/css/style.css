@@ -45,5 +45,5 @@ a.c:hover {
 	grid-template-rows: auto;
 }
 .grid1 > div{
-	border: 1px solid red;
+	border: 0px solid red;
 }
