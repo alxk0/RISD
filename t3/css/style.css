@@ -7,7 +7,7 @@ html{
 }
 body {
 	background-color: #F8F7F1;
-	margin: 15px;
+	margin: 10px;
 }
 a:link { text-decoration: none; color:  #07080E;}
 a:visited { text-decoration: none; color:  #07080E;}
@@ -23,7 +23,7 @@ a.c:hover {
 }
 .grid {
 	display: grid;
-	grid-template-columns: 0.1fr 3fr 0.01fr;
+	grid-template-columns: 0.01fr 4fr 0.01fr;
 	grid-template-rows: auto;
 	width: 100%;
 }
@@ -41,22 +41,10 @@ a.c:hover {
 }
 .grid1 {
 	display: grid;
-	grid-template-columns: 0.5fr 3fr 0.5fr;
+	grid-template-columns: 0.4fr 4fr 0.1fr;
 	grid-template-rows: auto;
+	max-width: 1440px;
 }
 .grid1 > div{
 	border: 0px solid red;
-}
-@media screen and (max-width: 414px) {
-	body {
-		font-size:15px;
-	}
-}
-}
-@media screen and (max-width: 768px) {
-	body {
-		font-size:15px;
-	}
-}
-@media screen and (max-width: 1440px) {
 }

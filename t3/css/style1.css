@@ -28,10 +28,10 @@ a:active { text-decoration: none; color:  #07080E;}
 	grid-template-columns: 0.75fr 4fr 1fr;
 	grid-template-rows: auto;
 	gap: 0px;
-	width: 100%;
+	max-width: 1300px;
 }
 .grid > div{
-	border: 0px solid green;
+	border: 1px solid green;
 }
 .text01a {
 	font-family: "IBM Plex Sans";
@@ -48,6 +48,7 @@ a:active { text-decoration: none; color:  #07080E;}
 	font-family: 'Crimson Text', serif;
 	font-size: min(max(1rem, 4vw), 25px);
 	line-height: 1.2;
+	max-width: 900px;
 }
 .text02b {
 	font-family: 'Crimson Text', serif;
@@ -58,9 +59,12 @@ a:active { text-decoration: none; color:  #07080E;}
 .responsive{
 	width: 100%;
 }
-@media only screen and (max-width: 1100px) {
-	  .grid {
+@media only screen and (max-width: 768px) {
+	.grid {
 		display: grid;
-		grid-template-columns: 0.1fr 5fr 0.1fr;
+		grid-template-columns: 0.05fr 5fr;
+	}
+	.text02b {
+		display: none;
 	}
 }
