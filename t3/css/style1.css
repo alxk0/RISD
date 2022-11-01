@@ -37,7 +37,7 @@ a:active { text-decoration: none; color:  #07080E;}
 	grid-template-columns: 0.75fr 4fr 1fr;
 	grid-template-rows: auto;
 	gap: 0px;
-	max-width: 1000px;
+	max-width: 1150px;
 }
 .grid > div{
 	border:0px solid green;
