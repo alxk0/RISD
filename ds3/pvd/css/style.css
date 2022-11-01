@@ -2,7 +2,7 @@ html {
 	/* overflow: hidden; */
 }
 body {
-			margin: 0;
+			margin: 0px;
 			background-color: #1B1B1B;
 			font-family: 'Barlow Semi Condensed', sans-serif;
 			font-weight: 500px;
@@ -26,6 +26,13 @@ a#x:hover {
 	height: 50px;
 	font-size: 35px;
 	width: 100%;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  align-items: center;
+  justify-items: center; /* adjusted */
 }
 .grid {
 	display: grid;
