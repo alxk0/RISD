@@ -94,8 +94,8 @@ color: #EA4436;
 }
 @media (max-width: 768px) {
   .grid{
-  	grid-template-columns: repeat(6, 100px);
-  	grid-template-rows: repeat(20, 100px);
+  	grid-template-columns: repeat(8, 100px);
+  	grid-template-rows: repeat(15, 100px);
   }
 }
 @media (max-width: 600px) {
