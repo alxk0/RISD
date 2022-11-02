@@ -57,13 +57,25 @@ a:active { text-decoration: none; color:  #07080E;}
 .text02a {
 	font-family: 'Crimson Text', serif;
 	font-size: min(max(1rem, 4vw), 25px);
-	line-height: 1.2;
+	line-height: 1.25;
 	max-width: 750px;
 }
 .text02b {
 	font-family: 'Crimson Text', serif;
 	font-size: min(max(1rem, 4vw), 17px);
-	line-height: 1.1;
+	line-height: 1.2;
+	padding-left: 15px;
+}
+.text03a {
+	font-family: 'Merriweather', serif;
+	font-size: min(max(1rem, 4vw), 20px);
+	line-height: 1.45;
+	max-width: 750px;
+}
+.text03b {
+	font-family: 'Merriweather', serif;
+	font-size: min(max(1rem, 4vw), 14px);
+	line-height: 1.3;
 	padding-left: 15px;
 }
 .responsive{
@@ -73,6 +85,9 @@ a:active { text-decoration: none; color:  #07080E;}
 	.grid {
 		display: grid;
 		grid-template-columns: 0.05fr 5fr;
+	}
+	.text03b {
+		display: none;
 	}
 	.text02b {
 		display: none;
