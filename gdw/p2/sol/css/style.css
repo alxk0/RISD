@@ -11,9 +11,10 @@ body {
 			font-family: "IBM Plex Mono";
 			font-size: 15px;
 			color: #D9D9D9;
+			place-items: center;
+			overflow: hidden;
 			/*
 			min-height: 90vh;
-			overflow: hidden;
 			*/
 }
 a:link { text-decoration: none; color:  #D9D9D9;}
@@ -22,6 +23,19 @@ a:hover { text-decoration: none; color: #1B1B1B; background-color: cyan; }
 a:active { text-decoration: none; color:  #1B1B1B;}
 a {
     text-decoration: none;
+}
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	border: 0px solid green;
+	width: 100%;
+	height: 100%;
+	justify-items: center;
+}
+.app{
+	max-width: 700px;
+	min-width: 700px;
 }
 .head {
 	display: grid;
@@ -56,7 +70,7 @@ a {
 	border: 2px solid white;
 	position: relative;
 	top: 17%; 
-	left: 3%;
+	left: 0%;
 }
 .clock .number {
 	--rotation: 0;
@@ -87,31 +101,6 @@ a {
 .clock .season3 { --rotation: 180deg; }
 .clock .season4 { --rotation: 270deg; }
 
-.clock .hand {
-	--rotation: 0;
-	position: absolute;
-	bottom: 50%;
-	left: 50%;
-	width: 1px;
-	height: 50%;
-	background-color: #FFFFFF;
-	transform-origin:  bottom;
-	z-index: 10;
-	transform:  translateX(-50%) rotate(calc(var(--rotation) * 1deg));
-}
-
-.clock::after {
-	content: '';
-	position: absolute;
-	background-color: #FFFFFF;
-	z-index: 11;
-	width: 15px;
-	height: 15px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
-}
-
 .clock .line1 {
 	position: absolute;
 	bottom: 50%;
@@ -134,8 +123,8 @@ a {
 	position: absolute;
 	transform: rotate(45deg);
 	transform-origin: 0% 0%;
-	left: 50%;
-	width: 71%;
+	left: 50.25%;
+	width: 70.5%;
 	height: 1px;
 	background: linear-gradient(.25turn, cyan, 50%, red);
 }
@@ -144,8 +133,8 @@ a {
 	position: absolute;
 	transform: rotate(-45deg);
 	transform-origin: 200%;
-	left: 8%;
-	width: 71%;
+	left: 9%;
+	width: 70.5%;
 	height: 1px;
 	background: linear-gradient(.25turn, white, 60%, red);
 }
@@ -163,12 +152,11 @@ a {
 	position: absolute;
 	transform: rotate(45deg);
 	transform-origin: -100%;
-	left: 21%;
-	width: 71%;
+	left: 20.75%;
+	width: 70.5%;
 	height: 1px;
 	background: linear-gradient(.25turn, green, 30%, white);
 }
-
 .clock .line7 {
 	position: absolute;
 	bottom: 50%;
@@ -182,13 +170,67 @@ a {
 	position: absolute;
 	transform: rotate(-45deg);
 	transform-origin: 100%;
-	left: -21%;
-	width: 71%;
+	left: -20.5%;
+	width: 70.5%;
 	height: 1px;
 	background: linear-gradient(.25turn, green, 50%, cyan);;
 }
+
+.base-timer {
+  position: absolute;
+  width: 552px;
+  height: 552px;
+  /*background-color: rgba(255, 0, 0, 0.5);*/
+  left: -5.5%;
+  bottom: -5.5%;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: #1B1B1B;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke: #FFFFFF;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 5px;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: #1B1B1B;
+}
+
+.base-timer__path-elapsed.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-elapsed.orange {
+  color: orange;
+}
+
+.base-timer__path-elapsed.red {
+  color: red;
+}
 /*
-/*
+.base-timer__label {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
 @media (max-width: 775px) {
   .grid{
   	grid-template-columns: 1fr;
