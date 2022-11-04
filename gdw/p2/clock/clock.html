@@ -6,29 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CLOCK MODULE</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<script defer src="js/script.js"></script>
 </head>
 <body>
-<div class="wrapper">
-  <div class="box">
-  <!-- countdown circle -->
-  <svg class="clock-container">
-    <circle class="clock-shape"></circle>
-    <circle class="clock-shape main-circle"></circle>
-  </svg>
-  <!-- digital clock -->
-  <div class="content">
-    <span class="time hour">
-      12
-    </span>
-    <b class="colon">:</b>
-    <span class="time min">
-      00
-    </span>
-  </div>
-</div>
-</div>
+<canvas id="canvas" width="500" height="500"></canvas>
 </body>
 </html>

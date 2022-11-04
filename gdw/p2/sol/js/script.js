@@ -1,21 +1,18 @@
-setInterval(setClock, 1000)
-
-const secondHand = document.querySelector('[data-second-hand]')
-
-function setClock() {
-	const currentDate = new Date()
-	const secondsRatio = currentDate.getSeconds() / 60
-	setRotation(secondHand, secondsRatio)
-}
-
-function setRotation(element, rotationRatio) {
-	element.style.setProperty('--rotation', rotationRatio * 360)
-}
-
-setClock()
-
-/* DATE X TIME */
+/* DATE */
 
 var dt = new Date();
 
 document.getElementById('date-time').innerHTML=dt;
+
+/* GREETING */
+
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "GOOD MORNING.";
+} else if (time < 20) {
+  greeting = "GOOD AFTERNOON.";
+} else {
+  greeting = "GOOD EVENING.";
+}
+document.getElementById("greeting").innerHTML = greeting;
