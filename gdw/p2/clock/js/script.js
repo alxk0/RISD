@@ -1,10 +1,10 @@
 var cvs = document.getElementById('canvas');
 var ctx = cvs.getContext('2d');
-ctx.lineWidth = 2;
+ctx.lineWidth = 3;
 ctx.textAlign = 'center';
 ctx.textBaseline = 'middle';
-ctx.font = '25px Barlow Semi-Condensed, sans-serif';
-ctx.fillStyle = 'white';
+ctx.font = '50px Barlow, sans-serif';
+ctx.fillStyle = '#D9D9D9';
 
 /**
  * @closure
@@ -25,7 +25,7 @@ var draw = (function () {
         p = p || 100; // When time is '00' we show full circle
         ctx.strokeStyle = c;
         ctx.beginPath();
-        ctx.arc(175, 175, r, start, p * end + start, false);
+        ctx.arc(350, 350, r, start, p * end + start, false);
         ctx.stroke();
     };
 }());
@@ -46,11 +46,11 @@ var clock = function () {
     m = m < 10 ? '0' + m : m;
     s = s < 10 ? '0' + s : s;
 
-    ctx.clearRect(0, 0, 350, 350);
-    ctx.fillText(h + ':' + m + ':' + s, 175, 175);
-    draw(75, hp, '#E6E6E6');
-    draw(100, mp, '#F2F2F2');
-    draw(125, sp, '#FFFFFF');
+    ctx.clearRect(0, 0, 650, 650);
+    ctx.fillText(h + ':' + m + ':' + s, 350, 350);
+    draw(150, hp, 'cyan');
+    draw(200, mp, '#F2F2F2');
+    draw(250, sp, '#FFFFFF');
 };
 
 clock()
