@@ -17,20 +17,39 @@ a:active { text-decoration: none; color:  #1B1B1B;}
 a#x:hover {
     background-color: rgba(0,0,0,0);
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1B1B1B;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: cyan;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #E7149C;
+}
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 99vw;
   justify-items: center; /* adjusted */
 }
 .grid {
 	display: grid;
-	grid-template-columns: repeat(15, 100px);
-	grid-template-rows: repeat(8, 100px);
+	grid-template-columns: repeat(15, 75px);
+	grid-template-rows: repeat(8, 75px);
 	border: 0px solid greenyellow;
-	gap: 5px;
+	gap: 20px;
 }
 .grid > div {
 	border: 1px solid white;
@@ -38,7 +57,7 @@ a#x:hover {
 .cell {
 	font-size: 20px; 
 	text-align: center;
-	background-size: 100px 100px;
+	background-size: 75px 75px;
 }
 .middle {
 	background-image: url("img/back.png");
@@ -91,21 +110,23 @@ a.fill-div {
 .close:hover { 
 color: #EA4436;
 }
+/*
 @media (max-width: 1440px) {
   .grid{
-  	grid-template-columns: repeat(12, 100px);
-  	grid-template-rows: repeat(10, 100px);
+  	grid-template-columns: repeat(12, 75px);
+  	grid-template-rows: repeat(10, 75px);
   }
 }
 @media (max-width: 768px) {
   .grid{
-  	grid-template-columns: repeat(8, 100px);
-  	grid-template-rows: repeat(15, 100px);
+  	grid-template-columns: repeat(8, 75px);
+  	grid-template-rows: repeat(15, 75px);
   }
 }
 @media (max-width: 600px) {
   .grid{
-  	grid-template-columns: repeat(4, 100px);
-  	grid-template-rows: repeat(30, 100px);
+  	grid-template-columns: repeat(4, 75px);
+  	grid-template-rows: repeat(30, 75px);
   }
 }
+*/
