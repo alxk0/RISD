@@ -111,6 +111,9 @@ a.fill-div {
 .close:hover { 
 color: #EA4436;
 }
+.blink {
+  animation: blinker 1s linear infinite;
+}
 /*
 @media (max-width: 1440px) {
   .grid{
