@@ -112,7 +112,15 @@ a.fill-div {
 color: #EA4436;
 }
 .blink {
-  animation: blinker 1s linear infinite;
+  animation: blinker 3s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.responsive {
+	width: 100%;
 }
 /*
 @media (max-width: 1440px) {
