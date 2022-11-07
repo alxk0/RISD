@@ -2,6 +2,7 @@
 
 /* Slideshow container */
 .slideshow-container {
+  min-width: 1000px;
   max-width: 1200px;
   position: relative;
   margin: auto;
@@ -10,6 +11,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
+  border: 0px solid green;
 }
 
 /* Next & previous buttons */
