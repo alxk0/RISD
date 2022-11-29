@@ -14,7 +14,7 @@
 	box-sizing: border-box;
 	background-color: #F9F8F5;
 	font-family: 'Bebas Neue', sans-serif;
-	font-size: min(max(1rem, 4.35vw), 20px);
+	font-size: min(max(1rem, 4.35vw), 16px);
 	font-weight: 400;
 	line-height: 1.25;
 	letter-spacing: 0.4px; 
