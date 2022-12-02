@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BINAURAL</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+	  <div class="header"></div>
+	  <div class="left">
+		<div class="dropdown">
+		  <button class="dropbtn">I AM :</button>
+		  <div class="dropdown-content">
+		    <a href="01.html">SLEEPING</a>
+		    <a href="01.html">IN PAIN</a>
+		    <a href="02.html">RELAXING</a>
+		    <a href="02.html">MEDITATING</a>
+		    <a href="02.html">CREATING</a>
+		    <a href="02.html">ADDICTED</a>
+		    <a href="03.html">STRESSED</a>
+		    <a href="03.html">NEGATIVE</a>
+		    <a href="03.html">LEARNING</a>
+		    <a href="04.html">WORKING</a>
+		    <a href="04.html">FOCUSING</a>
+		    <a href="04.html">THINKING</a>
+		    <a href="04.html">UNMOTIVATED</a>
+		    <a href="05.html">RECALLING</a>
+		    <a href="05.html">PROCESSING</a>
+		    <a href="05.html">TRANSCENDING</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="main">
+	  	<div class="grid">
+	  		<div><a href="05.html" class="fill-div"><img src="img/00_1.png"></a></div>
+	  		<a href="05.html"><div style="background-image: url('img/00_2.png'); height: 100%"></div></a>
+	  		<div><a href="05.html" class="fill-div"><img src="img/00_3.png"></a></div>
+
+	  		<div></div>
+	  		<div>
+	  			<div class="grid1">
+	  				<div>GAMMA : 30 Hz | 100 Hz</div>
+	  				<div class="txtright">HIGH-LEVEL COGNITION, MEMORY RECALL, PEAK AWARENESS
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div></div>
+
+	  		<div><a href="04.html" class="fill-div"><img src="img/00_1.png"></a></div>
+	  		<a href="04.html"><div style="background-image: url('img/00_2.png'); height: 100%"></div></a>
+	  		<div><a href="04.html" class="fill-div"><img src="img/00_3.png"></a></div>
+
+	  		<div></div>
+	  		<div>
+	  			<div class="grid1">
+	  				<div>BETA : 13 Hz | 30 Hz</div>
+	  				<div class="txtright">FOCUSED ATTENTION, COGNITIVE THINKING, PROBLEM SOLVING, ACTIVE
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div></div>
+
+	  		<div><a href="03.html" class="fill-div"><img src="img/00_1.png"></a></div>
+	  		<a href="03.html"><div style="background-image: url('img/00_2.png'); height: 100%"></div></a>
+	  		<div><a href="03.html" class="fill-div"><img src="img/00_3.png"></a></div>
+
+	  		<div></div>
+	  		<div>
+	  			<div class="grid1">
+	  				<div>ALPHA : 8 hz | 13 Hz</div>
+	  				<div class="txtright">
+	  				RELAXED FOCUS, STRESS REDUCTION, POSITIVE THINKING, FAST LEARNING
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div></div>
+
+	  		<div><a href="02.html" class="fill-div"><img src="img/00_1.png"></a></div>
+	  		<a href="02.html"><div style="background-image: url('img/00_2.png'); height: 100%"></div></a>
+	  		<div><a href="02.html" class="fill-div"><img src="img/00_3.png"></a></div>
+
+	  		<div></div>
+	  		<div>
+	  			<div class="grid1">
+	  				<div>THETA : 4 hz | 8 Hz</div>
+	  				<div class="txtright">
+	  				REM SLEEP, DEEP RELAXATION, MEDITATION, CREATIVITY
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div></div>
+
+	  		<div><a href="01.html" class="fill-div"><img src="img/01_1.png"></a></div>
+	  		<a href="01.html"><div style="background-image: url('img/01_2.png'); height: 100%"></div></a>
+	  		<div><a href="01.html" class="fill-div"><img src="img/01_3.png"></a></div>
+
+	  		<div></div>
+	  		<div>
+	  			<div class="grid1">
+	  				<div>DELTA : 0.1 hz | 4 Hz</div>
+	  				<div class="txtright">
+	  				DEEP SLEEP, PAIN RELIEF, ANTI-AGING, HEALING
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div></div>
+	  	</div>
+	  </div>
+	  <div class="right">
+	  	<audio id="yourAudio" loop autoplay>
+		    <source src="m4a/03hz.m4a" type="audio/x-m4a">
+		</audio>
+	  	<p><a href="#" id="audioControl">pause</a></p>
+	  	<script>
+	  		var yourAudio = document.getElementById('yourAudio'),
+		    	ctrl = document.getElementById('audioControl');
+
+			ctrl.onclick = function () {
+
+			    // Update the Button
+			    var pause = ctrl.innerHTML === 'play';
+			    ctrl.innerHTML = pause ? 'pause' : 'play';
+
+			    // Update the Audio
+			    var method = pause ? 'play' : 'pause';
+			    yourAudio[method]();
+
+			    // Prevent Default Action
+			    return false;
+			};
+	  	</script>
+	  </div>
+	  <div class="footer"></div>
+	</div>
+</body>
+</html>

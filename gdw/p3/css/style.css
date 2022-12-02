@@ -24,13 +24,15 @@
   grid-template-rows: 1fr 10fr 1fr;
 }
 .container > div {
-  border: 1px dashed #888;
+  border: 0px dashed #888;
 }
 .header {
   grid-area: header;
 }
 .left {
   grid-area: left;
+  height: 100%;
+  position: relative
 }
 .main {
   grid-area: main;
@@ -48,11 +50,11 @@
   display: grid;
   grid-template-columns: 22px 1fr 22px;
   grid-template-rows: 1fr 54px 1fr 54px 1fr 54px 1fr 54px 1fr 54px;
-  border: 1px solid yellow;
+  border: 0px solid yellow;
   gap: 0px;
 }
 .grid > div {
-  border: 1px solid green;
+  border: 0px solid green;
   box-sizing:  border-box;
   height: 120px;
 }
@@ -60,7 +62,7 @@
   display: grid;
   grid-template-columns: 2fr 6fr;
   grid-template-rows: auto;
-  border: 1px solid yellow;
+  border: 0px solid yellow;
   height: 100%;
   gap: 0px;
 }
@@ -84,3 +86,42 @@ div.right p {
     margin-right: -50%;
     transform: translate(-50%, -50%) 
   }
+/* Dropdown Button */
+.dropbtn {
+  background-color: none;
+  font-size: 26px;
+  padding: 6px;
+  border: 0px solid #212121;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  text-align:center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 2px 100px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #212121; color: #F8F7F1;}
