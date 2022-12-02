@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container">
-	  <div class="header">header</div>
+	  <div class="header"></div>
 	  <div class="left">
 		<div class="dropdown">
 		  <button class="dropbtn">I AM :</button>
@@ -106,12 +106,35 @@
 	  				DEEP SLEEP, PAIN RELIEF, ANTI-AGING, HEALING
 	  				</div>
 	  			</div>
-	  		</div>02
+	  		</div>
 	  		<div></div>
 	  	</div>
 	  </div>
-	  <div class="right"><p>S T O P</p></div>
-	  <div class="footer">footer</div>
+	  <div class="right">
+	  	<audio id="yourAudio" loop autoplay>
+		    <source src="m4a/40hz.m4a" type="audio/x-m4a">
+		</audio>
+	  	<p><a href="#" id="audioControl">pause</a></p>
+	  	<script>
+	  		var yourAudio = document.getElementById('yourAudio'),
+		    	ctrl = document.getElementById('audioControl');
+
+			ctrl.onclick = function () {
+
+			    // Update the Button
+			    var pause = ctrl.innerHTML === 'play';
+			    ctrl.innerHTML = pause ? 'pause' : 'play';
+
+			    // Update the Audio
+			    var method = pause ? 'play' : 'pause';
+			    yourAudio[method]();
+
+			    // Prevent Default Action
+			    return false;
+			};
+	  	</script>
+	  </div>
+	  <div class="footer"></div>
 	</div>
 </body>
 </html>
