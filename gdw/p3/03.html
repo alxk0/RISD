@@ -4,15 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>BINAURAL</title>
+	<title>binaural.beats</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-	  <div class="header"></div>
-	  <div class="left">
-		<div class="dropdown">
+	  <div class="header">
+	  	<div class="dropdown">
 		  <button class="dropbtn">I AM :</button>
 		  <div class="dropdown-content">
 		    <a href="01.html">SLEEPING</a>
@@ -32,8 +31,29 @@
 		    <a href="05.html">PROCESSING</a>
 		    <a href="05.html">TRANSCENDING</a>
 		  </div>
-		</div>
+	  	</div>
+	  	<div class="hdr2"><a href="index.html">binaural.beats</a></div>
+	  	<div class="hdr3">
+	  		<audio id="myAudio" loop autoplay>
+	  			<source src="m4a/11hz.m4a" type="audio/x-m4a">
+	  			Your browser does not support the audio element.
+	  		</audio>
+	  		<!--buttons-->
+	  		<button onclick="playAudio()" type="button" class="button1"><img src="img/play.png" width="28px" onMouseOver="this.src='img/play1.png'" onMouseOut="this.src='img/play.png'" ></button>
+	  		<button onclick="pauseAudio()" type="button" class="button2"><img src="img/pause.png" width="28px" onMouseOver="this.src='img/pause1.png'" onMouseOut="this.src='img/pause.png'"></button>
+	  		<script>
+	  			var x = document.getElementById("myAudio");
+	  			function playAudio(){
+	  				x.play();
+	  			}
+	  			function pauseAudio(){
+	  				x.pause();
+	  			}
+	  		</script>
+	  	</div>
 	  </div>
+	  <div class="space"></div>
+	  <div class="left"></div>
 	  <div class="main">
 	  	<div class="grid">
 	  		<div><a href="05.html" class="fill-div"><img src="img/00_1.png"></a></div>
@@ -98,8 +118,8 @@
 	  		<a href="01.html"><div style="background-image: url('img/00_2.png'); height: 100%"></div></a>
 	  		<div><a href="01.html" class="fill-div"><img src="img/00_3.png"></a></div>
 
-	  		<div></div>
-	  		<div>
+	  		<div style="height:50px;"></div>
+	  		<div style="height:50px;">
 	  			<div class="grid1">
 	  				<div>DELTA : 0.1 hz | 4 Hz</div>
 	  				<div class="txtright">
@@ -107,34 +127,53 @@
 	  				</div>
 	  			</div>
 	  		</div>
-	  		<div></div>
+	  		<div  style="height:50px;"></div>
 	  	</div>
 	  </div>
-	  <div class="right">
-	  	<audio id="yourAudio" loop autoplay>
-		    <source src="m4a/11hz.m4a" type="audio/x-m4a">
-		</audio>
-	  	<p><a href="#" id="audioControl">pause</a></p>
-	  	<script>
-	  		var yourAudio = document.getElementById('yourAudio'),
-		    	ctrl = document.getElementById('audioControl');
-
-			ctrl.onclick = function () {
-
-			    // Update the Button
-			    var pause = ctrl.innerHTML === 'play';
-			    ctrl.innerHTML = pause ? 'pause' : 'play';
-
-			    // Update the Audio
-			    var method = pause ? 'play' : 'pause';
-			    yourAudio[method]();
-
-			    // Prevent Default Action
-			    return false;
-			};
-	  	</script>
+	  <div class="right"></div>
+	  <div class="space2"></div>
+	  <div class="footer">
+	  	<div class="dropup">
+		  <button class="dropbtn">↑ &nbsp about</button>
+		  <div class="dropup-content">
+		     When two tones of slightly different frequencies are played in separate ears simultaneously (usually through headphones), the human brain perceives the creation of a new, third tone, whose frequency is equivalent to the difference between the two tones being played. This auditory illusion is called a binaural beat. For example, if a person hears a tone of 405 Hz in one ear and a tone of 415 Hz in the other, they would be hearing a binaural beat with a frequency of 10 Hz.
+		     <br><br>
+		     The following frequencies are applied in this application specifically :
+		     <br><br>
+		     GAMMA : &nbsp40 Hz<br>
+		     BETA &nbsp: &nbsp20 Hz<br>
+		     ALPHA : &nbsp11 Hz<br>
+		     THETA : &nbsp 6 Hz<br>
+		     DELTA : &nbsp 3 Hz
+		     <br><br>
+		     The purpose of using binaural beats therapy may differ among individuals. While scientific research regarding the use of binaural beats has produced mixed results, this application remains as simply
+		     a cognitive & design experiment.
+		     <br><br>
+		     It is important to avoid using binaural beats therapy while undertaking tasks that require alterness and full attention, such as driving.
+		  </div>
+		</div>
+		<div class="dropup">
+		  <button class="dropbtn">↑ &nbsp instructions</button>
+		  <div class="dropup-content">
+		     To listen to binaural beats, please use a pair of stereo headphones or earphones as two tones are required to produce the binaural beat.<br><br>
+		     Please ensure that the volume of your computer or device is adjusted to a proper volume level for prolonged listening.<br><br>
+		     Experiment with the numerous options between the frequencies and experiment with the length of time you
+		     listen to the binaural beats works for you.
+		  </div>
+		</div>
+		<div class="dropup">
+		  <button class="dropbtn">↑ &nbsp colophon</button>
+		  <div class="dropup-content">
+		     Made by Alex Kim<br><br>
+		     Graphic Design for the Web<br>
+			 GRAPH-3237-01 (29750), Fall 2022<br>
+			 Rhode Island School of Design<br>
+			 Minkyoung Kim<br><br>
+			 Built with HTML, CSS & JS.<br>
+		     <p>
+		  </div>
+		</div>
 	  </div>
-	  <div class="footer"></div>
 	</div>
 </body>
 </html>
