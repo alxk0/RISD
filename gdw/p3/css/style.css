@@ -129,8 +129,6 @@ button {
   padding: 3px 6px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
 .button1:hover:before {
   display:url("img/pause.png")
@@ -156,6 +154,8 @@ button {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 200px;
+  width:33%;
+  left: 4px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -194,12 +194,13 @@ button {
 .dropup-content {
   display: none;
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   background-color: #212121;
   border: 1px;
   border-style: solid;
   border-color: #F8F7F1;
   min-width: 160px;
+  width:100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-family: 'Lekton';
