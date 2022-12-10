@@ -36,7 +36,7 @@
   "space2 space2 space2"
   "footer footer footer";
   grid-template-columns: 120px 4fr 120px;
-  grid-template-rows: 40px 1fr 10fr 1fr 40px;
+  grid-template-rows: 40px 1fr 10fr 0.1fr 40px;
 }
 .container > div {
   border: 0px dashed #888;
