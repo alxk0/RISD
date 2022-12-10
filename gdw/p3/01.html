@@ -34,13 +34,14 @@
 	  	</div>
 	  	<div class="hdr2"><a href="index.html">binaural.beats</a></div>
 	  	<div class="hdr3">
+	  		<iframe src="m4a/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 	  		<audio id="myAudio" loop autoplay>
 	  			<source src="m4a/03hz.m4a" type="audio/x-m4a">
 	  			Your browser does not support the audio element.
 	  		</audio>
 	  		<!--buttons-->
-	  		<button onclick="playAudio()" type="button" class="button1"><img src="img/play.png" width="28px" onMouseOver="this.src='img/play1.png'" onMouseOut="this.src='img/play.png'" ></button>
-	  		<button onclick="pauseAudio()" type="button" class="button2"><img src="img/pause.png" width="28px" onMouseOver="this.src='img/pause1.png'" onMouseOut="this.src='img/pause.png'"></button>
+	  		<button onclick="playAudio()" type="button" class="button1"><img src="img/play.png" width="26px" onMouseOver="this.src='img/play1.png'" onMouseOut="this.src='img/play.png'" ></button>
+	  		<button onclick="pauseAudio()" type="button" class="button2"><img src="img/pause.png" width="26px" onMouseOver="this.src='img/pause1.png'" onMouseOut="this.src='img/pause.png'"></button>
 	  		<script>
 	  			var x = document.getElementById("myAudio");
 	  			function playAudio(){
@@ -134,7 +135,7 @@
 	  <div class="space2"></div>
 	  <div class="footer">
 	  	<div class="dropup">
-		  <button class="dropbtn">↑ &nbsp about</button>
+		  <button class="dropupbtn">↑ &nbsp about</button>
 		  <div class="dropup-content">
 		     When two tones of slightly different frequencies are played in separate ears simultaneously (usually through headphones), the human brain perceives the creation of a new, third tone, whose frequency is equivalent to the difference between the two tones being played. This auditory illusion is called a binaural beat. For example, if a person hears a tone of 405 Hz in one ear and a tone of 415 Hz in the other, they would be hearing a binaural beat with a frequency of 10 Hz.
 		     <br><br>
@@ -153,7 +154,7 @@
 		  </div>
 		</div>
 		<div class="dropup">
-		  <button class="dropbtn">↑ &nbsp instructions</button>
+		  <button class="dropupbtn">↑ &nbsp instructions</button>
 		  <div class="dropup-content">
 		     To listen to binaural beats, please use a pair of stereo headphones or earphones as two tones are required to produce the binaural beat.<br><br>
 		     Please ensure that the volume of your computer or device is adjusted to a proper volume level for prolonged listening.<br><br>
@@ -162,7 +163,7 @@
 		  </div>
 		</div>
 		<div class="dropup">
-		  <button class="dropbtn">↑ &nbsp colophon</button>
+		  <button class="dropupbtn">↑ &nbsp colophon</button>
 		  <div class="dropup-content">
 		     Made by Alex Kim<br><br>
 		     Graphic Design for the Web<br>

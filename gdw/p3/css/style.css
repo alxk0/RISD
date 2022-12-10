@@ -60,7 +60,7 @@
   font-weight: 400;
   font-style: italic;
   font-size: 28px;
-  padding: 2px;
+  padding: 4px;
   text-decoration: none;
 }
 .hdr2 a:link { text-decoration: none; color: #F8F7F1; background-color: #212121; font-size: 28px; font-weight: 400; padding: 2px; }
@@ -69,6 +69,7 @@
 .hdr2 a:active { text-decoration: none; color: #F8F7F1; background-color: #212121; font-size: 28px; font-weight: 400; padding: 2px; }
 .hdr3 {
   text-align:center;
+  padding: 3px;
 }
 .space {
   grid-area: space;
@@ -125,7 +126,7 @@ button {
   background-color: #212121;
   border: none;
   color: #F8F7F1;
-  padding: 8px 6px;
+  padding: 3px 6px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -140,7 +141,9 @@ button {
   color: #F8F7F1;
   font-size: 16px;
   font-weight: 400;
-  padding: 9px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
   border: 0px solid #212121;
 }
 /* The container <div> - needed to position the dropdown content */
@@ -170,15 +173,17 @@ button {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #212121; color: #F8F7F1;}
+.dropdown:hover .dropbtn {background-color: rgba(255,255,255,.4); color: #212121;}
 
 /* ↓ DROPUP ↓ */
-.dropup {
+.dropupbtn {
   background-color: solid red;
   color: white;
-  padding: 16px;
+  padding: 10px;
   font-size: 16px;
   border: none;
+  width: 100%;
+  height: 100%;
 }
 /* The container <div> - needed to position the dropup content */
 .dropup {
@@ -219,6 +224,6 @@ button {
 .dropup:hover .dropup-content {
   display: block;
 }
-.dropup:hover .dropbtn {
-  background-color: none;
+.dropup:hover .dropupbtn {
+  background-color: rgba(255,255,255,.4);
 }
