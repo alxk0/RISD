@@ -173,7 +173,7 @@ button {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgba(255,255,255,.4); color: #212121;}
+.dropdown:hover .dropbtn {background-color: rgba(255,255,255,.4);}
 
 /* ↓ DROPUP ↓ */
 .dropupbtn {
