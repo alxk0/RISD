@@ -27,7 +27,7 @@ a {
 	grid-template-columns: 1fr;
 	align-items: center;
 	border: 0px solid green;
-	width: 100%;
+	width: 100vw;
 	justify-items: center;
 
 }
