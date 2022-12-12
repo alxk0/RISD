@@ -36,6 +36,7 @@ body {
 	align-items: center;
 	justify-items: center;
 	border: 0px solid cyan;
+	max-width: 900px;
 	min-height: 900px;
 	z-index: 0;
 }
