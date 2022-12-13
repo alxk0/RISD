@@ -74,7 +74,7 @@ class ProgClock {
 			const h_progress = (min + m_progress) / 60;
 			const d_progress = (hr + h_progress) / 24;
 			/* APP COMPONENT */
-			const y_progress = (((month) * 30) + day) / 365;
+			const y_progress = (((month) * 30) + day) / 356;
 			const y = 365;
 			/* const mo_progress = ((day - 1) + d_progress) / monthInfo.days; */
 			const mo_progress = ((day + 1) + d_progress) / monthInfo.days;
