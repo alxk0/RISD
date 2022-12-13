@@ -50,7 +50,6 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	position:relative;
 	border: 0px solid red;
 	width: 100%;
-	min-height:40px;
 }
 .head > div {
 	border: 0px solid white;
