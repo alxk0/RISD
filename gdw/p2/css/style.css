@@ -8,7 +8,7 @@ body {
 }
 a:link { text-decoration: none; color:  #D9D9D9;}
 a:visited { text-decoration: none; color:  #D9D9D9;}
-a:hover { text-decoration: none; font-style: italic; color: #1B1B1B; background-color: fuchsia; }
+a:hover { text-decoration: none; font-style: italic; background-color: fuchsia;}
 a:active { text-decoration: none; color:  #D9D9D9;}
 .container {
 	display: grid;
@@ -42,7 +42,6 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	border: 0px solid cyan;
 	max-width: 900px;
 	min-height: 900px;
-	z-index: 0;
 }
 .app > div {
 	border: 0px solid cyan;
@@ -94,6 +93,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	border: 0px solid white;
 	position: relative;
 	margin: auto;
+	z-index: 10;
 }
 .clock > div {
 	border: 0px solid white;
@@ -105,7 +105,6 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	height: 100%;
 	text-align: center;
 	transform: rotate(var(--rotation));
-	z-index: 100;
 }
 .clock .number1 { --rotation: 0deg; top: 0%;}
 .clock .number2 { --rotation: 90deg; top: 0%;}
@@ -209,7 +208,6 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	border: 0px solid yellowgreen;
 	width: 500px;
 	height: 500px;
-	z-index: 100;
 }
 /* MODIFY RADIAL */
 .progClock__rings {
@@ -217,7 +215,6 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	position: relative;
 	width: 870px;
 	height: 870px;
-	z-index: -1;
 }
 [data-units] {
 	transition: opacity 0.2s linear;
