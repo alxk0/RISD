@@ -8,7 +8,7 @@ body {
 }
 a:link { text-decoration: none; color:  #D9D9D9;}
 a:visited { text-decoration: none; color:  #D9D9D9;}
-a:hover { text-decoration: none; font-style: italic; color: #1B1B1B; background-color: fuchsia; }
+a:hover { text-decoration: none; font-style: italic; color: #1B1B1B; background-color: cyan; }
 a:active { text-decoration: none; color:  #D9D9D9;}
 .container {
 	display: grid;
@@ -132,7 +132,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: 50%;
 	width: 1px;
 	height: 50%;
-	background: linear-gradient(0deg, red, 30%, cyan);
+	background: linear-gradient(0deg, green, 10%, white);
 }
 .clock .line2 {
 	position: absolute;
@@ -140,7 +140,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: 50%;
 	width: 50%;
 	height: 1px;
-	background: linear-gradient(.25turn, white, 40%, red);
+	background: linear-gradient(.25turn, cyan, 30%, green);
 }
 .clock .line3 {
 	position: absolute;
@@ -150,7 +150,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: 50.25%;
 	width: 70.5%;
 	height: 1px;
-	background: linear-gradient(.25turn, cyan, 50%, red);
+	background: linear-gradient(.25turn, white, 60%, green);
 }
 .clock .line4 {
 	position: absolute;
@@ -160,7 +160,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: 9%;
 	width: 70.5%;
 	height: 1px;
-	background: linear-gradient(.25turn, white, 70%, red);
+	background: linear-gradient(.25turn, cyan, 60%, green);
 }
 .clock .line5 {
 	position: absolute;
@@ -168,7 +168,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: 50%;
 	width: 1px;
 	height: 50%;
-	background: linear-gradient(0deg, white, 80%, green);
+	background: linear-gradient(0deg, cyan, 70%, red);
 }
 .clock .line6 {
 	position: absolute;
@@ -178,7 +178,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: 20.75%;
 	width: 70.5%;
 	height: 1px;
-	background: linear-gradient(.25turn, green, 30%, white);
+	background: linear-gradient(.25turn, red, 50%, cyan);
 }
 .clock .line7 {
 	position: absolute;
@@ -186,7 +186,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: 0%;
 	width: 50%;
 	height: 1px;
-	background: linear-gradient(.25turn, green, 80%, cyan);
+	background: linear-gradient(.25turn, red, 70%, white);
 }
 .clock .line8 {
 	position: absolute;
@@ -196,7 +196,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	left: -20.5%;
 	width: 70.5%;
 	height: 1px;
-	background: linear-gradient(.25turn, green, 40%, cyan);;
+	background: linear-gradient(.25turn, red, 15%, white);;
 }
 .progClock {
 	display: grid;
