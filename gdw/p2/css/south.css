@@ -40,8 +40,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	align-items: center;
 	justify-items: center;
 	border: 0px solid cyan;
-	max-width: 900px;
-	min-height: 900px;
+	max-width: 770px;
 }
 .app > div {
 	border: 0px solid cyan;
