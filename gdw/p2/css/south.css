@@ -52,7 +52,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	position:relative;
 	border: 0px solid red;
 	width: 100%;
-	animation: fadein 9s;
+	animation: fadein 2s;
 }
 #head {animation-timing-function:ease;}
 .head > div {
@@ -100,7 +100,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	border: 0px solid white;
 	position: relative;
 	margin: auto;
-	animation: fadein 2s;
+	animation: fadein 4s;
 }
 #clock {animation-timing-function:ease;}
 .clock > div {
@@ -224,7 +224,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	width: 870px;
 	height: 870px;
 	z-index: 0;
-	animation: fadein 8s;
+	animation: fadein 10s;
 }
 #ring {animation-timing-function:ease;}
 @keyframes fadein {
