@@ -229,6 +229,8 @@ button {
   line-height:1.2em;
   color: #F8F7F1;
   padding: 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 /* Links inside the dropup */
 .dropup-content a {
