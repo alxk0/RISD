@@ -34,6 +34,7 @@ a:active { text-decoration: none; color:  #212121;}
 .grid {
 	max-width: 714px;
 	border:0px solid blue;
+	margin-left: 5px;
 }
 .grid > div { border: 0px solid red; }
 .title {
@@ -41,7 +42,8 @@ a:active { text-decoration: none; color:  #212121;}
 	font-size: 70px;
 	font-style: italic;
 	font-weight: 100;
-	padding-top: 16px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 	letter-spacing:0px;
 	/*
 	text-align: justify;
@@ -50,21 +52,28 @@ a:active { text-decoration: none; color:  #212121;}
 }
 .tags {
 	margin: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 4px;
+}
+.tags > div {
+	border: 1px solid #1B1B1B;
+	padding: 4px;
+	text-align: center;
+	font-size: 11px;
 }
 .header {
 	background-color: #1B1B1B;
 	color: #F9F8F5;
 	padding:4px;
 }
-.responsive{
-	width: 100%;
-}
+.responsive{ width: 100%; }
 hr {
 	 margin-top:6px;
 	 margin-bottom:6px;
 }
 @media screen and (max-width: 768px) {
-  .grid {
-		width: 100%;
-	}
+  .grid { width: 100%; }
+  .title { font-size: 54px }
 }

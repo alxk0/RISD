@@ -14,18 +14,10 @@
   letter-spacing: 0px; 
   color: #212121;
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #F8F7F1;
-}
-::-webkit-scrollbar-thumb {
-  background: #212121;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #212121;
-}
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #F8F7F1; }
+::-webkit-scrollbar-thumb { background: #212121; }
+::-webkit-scrollbar-thumb:hover { background: #212121; }
 .container {
   display: grid;
   width: 100%;
@@ -38,9 +30,7 @@
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 40px 1fr 4fr 1fr 40px;
 }
-.container > div {
-  border: 0px dashed #888;
-}
+.container > div { border: 0px dashed #888; }
 .header {
   grid-area: header;
   display: grid;
@@ -52,9 +42,7 @@
   color: #F8F7F1;
   border: 0px solid green;
 }
-.hdr1 {
-  text-align: center;
-}
+.hdr1 { text-align: center; }
 .hdr2 {
   text-align: center;
   font-weight: 400;
@@ -71,9 +59,7 @@
   text-align:center;
   padding: 3px;
 }
-.space {
-  grid-area: space;
-}
+.space { grid-area: space; }
 .b5a {animation: fadein 2s;}
 #b5a {animation-timing-function:;}
 .b4a {animation: fadein 3s;}
@@ -95,15 +81,9 @@
 .b1b {animation: fadein 8s;}
 #b1b {animation-timing-function:ease;}
 .space2 {grid-area: space2;}
-.left {
-  grid-area: left;
-}
-.main {
-  grid-area: main;
-}
-.right {
-  grid-area: right;
-}
+.left { grid-area: left; }
+.main { grid-area: main; }
+.right { grid-area: right; }
 .footer {
   grid-area: footer;
   display: grid;
@@ -134,12 +114,8 @@
   border: 0px solid pink;
   gap: 0px;
 }
-.grid1 > div {
-  vertical-align: middle;
-}
-.txtright {
-  text-align: right;
-}
+.grid1 > div { vertical-align: middle; }
+.txtright { text-align: right; }
 button {
   background-color: #212121;
   border: none;
@@ -148,9 +124,7 @@ button {
   text-align: center;
   text-decoration: none;
 }
-.button1:hover:before {
-  display:url("img/pause.png")
-}
+.button1:hover:before { display:url("img/pause.png") }
 /* Dropdown Button */
 .dropbtn {
   background-color: #212121;
@@ -163,9 +137,7 @@ button {
   border: 0px solid #212121;
 }
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-  text-align:center;
-}
+.dropdown { text-align:center; }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -186,13 +158,10 @@ button {
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
-
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: rgba(255,255,255,.4);}
-
 /* ↓ DROPUP ↓ */
 .dropupbtn {
   background-color: solid red;
@@ -253,18 +222,10 @@ button {
   to {opacity: 1;}
 }
 @media screen and (max-width: 650px) {
-  * {
-    font-size: min(max(1rem, 4.35vw), 13px);
-  }
-  .grid > div {
-    height: 80px;
-  }
-  .container {
-    grid-template-columns: 0.05fr 1fr 0.05fr;
-  }
-  .hdr2 {
-    font-size: 24px;
-  }
+  * { font-size: min(max(1rem, 4.35vw), 13px); }
+  .grid > div { height: 80px; }
+  .container { grid-template-columns: 0.05fr 1fr 0.05fr; }
+  .hdr2 { font-size: 24px; }
   .hdr2 a:link { text-decoration: none; color: #F8F7F1; background-color: #212121; font-size: 24px; font-weight: 400; padding: 2px; }
   .hdr2 a:visited { text-decoration: none; color: #F8F7F1; background-color: #212121; font-size: 24px; font-weight: 400; padding: 2px; }
   .hdr2 a:hover { text-decoration: none; color: lightcyan; background-color: #212121; font-size: 24px; font-weight: 400; padding: 2px; }
@@ -273,10 +234,6 @@ button {
     text-align:center;
     padding: 4px;
   }
-  .dropdown-content a {
-    padding: 2px 4px;
-  }
-  .dropup-content {
-    min-width: 250px;
-  }
+  .dropdown-content a { padding: 2px 4px; }
+  .dropup-content { min-width: 250px; }
 }
