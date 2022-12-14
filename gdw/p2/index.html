@@ -7,14 +7,14 @@
 <title>SOLSTITIUM.IO</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
 <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/north.css">
 
 </head>
 <body>
 <div class="container">
 	<div class="appcontainer">
 		<div class="app">
-			<div class="head">
+			<div class="head" id="head">
 				<div style="font-size: 20px; letter-spacing: 2px;">
 					SOLSTITIUM.IO
 				</div>
@@ -25,7 +25,7 @@
 			<div class="grid">
 				<div class="clock">
 					<div id="clock" class="progClock">
-						<svg class="progClock__rings" width="500" height="500" viewBox="0 0 256 256" >
+						<svg class="progClock__ring" id="ring"width="500" height="500" viewBox="0 0 256 256" >
 							<defs>
 								<linearGradient id="clock-red" x1="0.25" y1="-0.5" x2="1.75" y2="1.75">
 									<stop offset="40%" stop-color="#FFFFFF" />
@@ -57,11 +57,11 @@
 					<div class="line line8"></div>
 				</div>
 			</div>
-			<div class="bottom">
+			<div class="bottom" id="bottom">
 				<div style="width:100%; text-align:left; font-size: 20px; letter-spacing: 2px;"><span id="greeting"></span></div>
 				<div style="width:100%; text-align:left; padding-top: 30px; padding-bottom: 30px"></i>TODAY IS</i> : <span id='date-time'></span><span id="time"></span>
 				</div>
-				<div class="footer">
+				<div class="footer" id="footer">
 					<div><i>SUMMER SOLSTICE</i> : <span id="june"></span></div>
 					<div style="text-align:right;"><i>AUTUMN EQUINOX</i> &nbsp: <span id="september"></span></div>
 					<div><i>WINTER SOLSTICE</i> : <span id="december"></span></div>

@@ -8,7 +8,7 @@ body {
 }
 a:link { text-decoration: none; color:  #D9D9D9;}
 a:visited { text-decoration: none; color:  #D9D9D9;}
-a:hover { text-decoration: none; font-style: italic; color: #1B1B1B; background-color: cyan; }
+a:hover { text-decoration: none; font-style: italic; background-color: fuchsia;}
 a:active { text-decoration: none; color:  #D9D9D9;}
 .container {
 	display: grid;
@@ -43,17 +43,22 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	max-width: 900px;
 	min-height: 900px;
 }
+.app > div {
+	border: 0px solid cyan;
+}
 .head {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	position:relative;
 	border: 0px solid red;
 	width: 100%;
+	animation: fadein 9s;
 }
+#head {animation-timing-function:ease;}
 .head > div {
 	border: 0px solid white;
 	box-sizing:  border-box;
-	z-index:10;
+	z-index: 10;
 }
 .footer {
 	display: grid;
@@ -65,10 +70,14 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 }
 .footer > div {
 	border:0px solid white;
+	animation: fadein 10s;
 }
+#footer {animation-timing-function:ease;}
 .bottom {
 	width:100%;
+	animation: fadein 9s;
 }
+#ring {animation-timing-function:ease;}
 .bottom > div {
 	border: 0px solid green;
 }
@@ -91,7 +100,9 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	border: 0px solid white;
 	position: relative;
 	margin: auto;
+	animation: fadein 2s;
 }
+#clock {animation-timing-function:ease;}
 .clock > div {
 	border: 0px solid white;
 }
@@ -206,59 +217,17 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	width: 500px;
 	height: 500px;
 }
-/* MODIFY RADIAL */
-.progClock__rings {
+/* SVG RADIAL */
+.progClock__ring {
 	display: block;
 	position: relative;
 	width: 870px;
 	height: 870px;
 	z-index: 0;
+	animation: fadein 8s;
 }
-[data-units] {
-	transition: opacity 0.2s linear;
-}
-/*
-.base-timer {
-  position: absolute;
-  width: 552px;
-  height: 552px;
-  left: -5.5%;
-  bottom: -5.5%;
-}
-.base-timer__svg {
-  transform: scaleX(-1);
-}
-.base-timer__circle {
-  fill: #1B1B1B;
-  stroke: none;
-}
-.base-timer__path-elapsed {
-  stroke-width: 1px;
-  stroke-linecap: round;
-  stroke: #D9D9D9;
-}
-.base-timer__path-remaining {
-  stroke-width: 5px;
-  transform: rotate(90deg);
-  transform-origin: center;
-  transition: 1s linear all;
-  fill-rule: nonzero;
-  stroke: #1B1B1B;
-}
-.base-timer__label {
-  position: absolute;
-  width: 600px;
-  height: 500px;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0px;
-}
-*/
-/*
-@media (max-width: 775px) {
-  .grid{
-  	grid-template-columns: 1fr;
-  }
+#ring {animation-timing-function:ease;}
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
