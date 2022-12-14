@@ -74,6 +74,47 @@
 .space {
   grid-area: space;
 }
+.b5a {
+  animation: fadein 2s;
+}
+#b5a {animation-timing-function:ease;}
+.b4a {
+  animation: fadein 4s;
+}
+#b4a {animation-timing-function:ease;}
+.b3a {
+  animation: fadein 6s;
+}
+#b3a {animation-timing-function:ease;}
+.b2a {
+  animation: fadein 8s;
+}
+#b2a {animation-timing-function:ease;}
+.b1a {
+  animation: fadein 10s;
+}
+#b1a {animation-timing-function:ease;}
+.b5b {
+  animation: fadein 4s;
+}
+#b5b {animation-timing-function:ease;}
+.b4b {
+  animation: fadein 6s;
+}
+#b4b {animation-timing-function:ease;}
+.b3b {
+  animation: fadein 8s;
+}
+#b3b {animation-timing-function:ease;}
+.b2b {
+  animation: fadein 10s;
+}
+#b2b {animation-timing-function:ease;}
+.b1b {
+  animation: fadein 12s;
+}
+#b1b {animation-timing-function:ease;
+}
 .space2 {
   grid-area: space2;
 }
@@ -227,6 +268,10 @@ button {
 }
 .dropup:hover .dropupbtn {
   background-color: rgba(255,255,255,.4);
+}
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 @media screen and (max-width: 650px) {
   * {
