@@ -16,13 +16,13 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	align-items: center;
 	border: 1px solid green;
 	width: 100vw;
-	height: 95vh;
+	height: 99vh;
 	justify-items: center;
 	border: 0px solid yellowgreen;
 }
 .appcontainer {
 	width: 100vw;
-	height: 95vh;
+	height: 99vh;
 	background-color: #1B1B1B;
 	display: grid;
 	grid-template-columns: 1fr;
