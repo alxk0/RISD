@@ -232,19 +232,24 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 }
 @media screen and (max-width: 768px) {
 	.progClock__ring {
-		width: 696px;
-		height: 696px;
+		width: 661px;
+		height: 661px;
 	}
 	.progClock {
-		width: 400px;
-		height: 400px;
+		width: 380px;
+		height: 380px;
 	}
 	.clock {
-		width: 400px;
-		height: 400px;
+		width: 380px;
+		height: 380px;
 	}
 	.clock .season {
-		width: 488px;
-		height: 488px;
+		width: 464px;
+		height: 464px;
+	}.container {
+		height: 90vh;
+	}
+	.appcontainer {
+		height: 90vh;
 	}
   }
