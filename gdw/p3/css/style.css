@@ -236,6 +236,10 @@ button {
     text-align:center;
     padding: 4px;
   }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
   .dropdown-content a { padding: 2px 4px; }
   .dropup-content { min-width: 250px; }
 }
