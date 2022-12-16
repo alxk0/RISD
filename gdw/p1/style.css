@@ -16,6 +16,10 @@
 	color: #1B1B1B;
 	overflow-x: none;
 }
+dark-mode {
+	background-color: #1B1B1B;
+	color: #F9F8F5;
+}  
 a:link { text-decoration: none;}
 a:visited { text-decoration: none;}
 a:hover { text-decoration: none; color: #F9F8F5; background-color: #1B1B1B; }
@@ -92,7 +96,6 @@ hr {
 .active, .accordion:hover { background-color: cyan; }
 .panel {
 	display: grid;
-
 	max-height: 0px;
 	overflow: hidden; 
 	transition: max-height 0.2s ease-out;
@@ -102,10 +105,22 @@ hr {
 	line-height: 1.2;
 }
 .txt {
-	border: 1px solid yellowgreen;
+	border: 0px solid yellowgreen;
+	display: grid;
+	grid-template-columns: 6px 1fr 0.95fr;
+	gap: 12px;
 }
 .txt > div {
-	border: 1px solid red;
+	border: 0px solid red;
+	font-size: 12px;
+	line-height: 1.2;
+}
+.b {
+	text-align: justify;
+	text-justify: inter-word;
+}
+i {
+	font-size: 12px;
 }
 @media screen and (max-width: 768px) {
   .grid { width: 100%; }
