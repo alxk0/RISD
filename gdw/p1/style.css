@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;1,100;0,200;1,200;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap');
 *
 {
 	margin: 0;
@@ -25,11 +26,11 @@ a:active { text-decoration: none; color:  #212121;}
 ::-webkit-scrollbar-thumb:hover { background: #D9D9D9; }
 .wrapper {
 	display: grid;
-  grid-template-columns: 1fr;
-  border: 0px solid green;
-  width: 99vw;
-  height: 99vh;
-  justify-items: center; /* adjusted */
+  	grid-template-columns: 1fr;
+  	border: 0px solid green;
+ 	 width: 99vw;
+  	height: 99vh;
+	justify-items: center; /* adjusted */
 }
 .grid {
 	max-width: 714px;
@@ -75,10 +76,36 @@ a.fill-div {
 	color: #F9F8F5;
 	padding:4px;
 }
-.responsive{ width: 100%; }
+.responsive { width: 100%; }
 hr {
 	 margin-top:6px;
 	 margin-bottom:6px;
+}
+.accordion {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+  }
+.active, .accordion:hover { background-color: cyan; }
+.panel {
+	display: grid;
+
+	max-height: 0px;
+	overflow: hidden; 
+	transition: max-height 0.2s ease-out;
+	border: 0px solid green;
+	font-family: 'Noto Serif';
+	font-size: 14px;
+	line-height: 1.2;
+}
+.txt {
+	border: 1px solid yellowgreen;
+}
+.txt > div {
+	border: 1px solid red;
 }
 @media screen and (max-width: 768px) {
   .grid { width: 100%; }
