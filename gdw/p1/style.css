@@ -32,7 +32,7 @@ a:active { text-decoration: none; color:  #212121;}
 	display: grid;
   	grid-template-columns: 1fr;
   	border: 0px solid green;
- 	 width: 99vw;
+ 	width: 99vw;
   	height: 99vh;
 	justify-items: center; /* adjusted */
 }
@@ -50,10 +50,17 @@ a:active { text-decoration: none; color:  #212121;}
 	margin-top: 16px;
 	margin-bottom: 16px;
 	letter-spacing:0px;
-	/*
-	text-align: justify;
-  text-justify: inter-word;
-  */
+}
+.title a {
+	font-family: 'IBM Plex Mono', 'Roboto', monospace; 
+	font-size: 70px;
+	font-style: italic;
+	font-weight: 100;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	letter-spacing:0px;
+	display:block;
+	height: 50%;
 }
 .tags {
 	margin: 10px;
@@ -107,7 +114,7 @@ hr {
 .txt {
 	border: 0px solid yellowgreen;
 	display: grid;
-	grid-template-columns: 6px 1fr 0.95fr;
+	grid-template-columns: 6px 1fr 0.95fr 4px;
 	gap: 12px;
 }
 .txt > div {
@@ -124,5 +131,6 @@ i {
 }
 @media screen and (max-width: 768px) {
   .grid { width: 100%; }
-  .title { font-size: 50px }
+  .title { font-size: 52px }
+  .title a { font-size: 52px }
 }
