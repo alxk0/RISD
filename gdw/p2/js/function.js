@@ -1,3 +1,5 @@
+/* RADIAL COMPONENT */
+
 window.addEventListener("DOMContentLoaded",() => {
 	const clock = new ProgClock("#clock");
 });
@@ -73,9 +75,9 @@ class ProgClock {
 			const m_progress = sec / 60;
 			const h_progress = (min + m_progress) / 60;
 			const d_progress = (hr + h_progress) / 24;
-			/* APP COMPONENT */
-			const y_progress = (((month) * 30) + day) / 350;
-			const y = 365;
+			/* RADIAL COMPONENT */
+			const y_progress = ((day - 21) + (month - 11)) / 365;
+			const y = 0;
 			/* const mo_progress = ((day - 1) + d_progress) / monthInfo.days; */
 			/* const mo_progress = ((day + 1) + d_progress) / monthInfo.days; */
 			const units = [
@@ -83,13 +85,13 @@ class ProgClock {
 					label: "w",
 					value: dayOfWeekName
 				},
-				/* APP COMPONENT */
+				/* RADIAL COMPONENT */
 				{
 					label: "mo",
 					value: y,
 					progress: y_progress
 				},
-				/* APP COMPONENT */
+				/* RADIAL COMPONENT */
 				{
 					label: "d", 
 					value: day,

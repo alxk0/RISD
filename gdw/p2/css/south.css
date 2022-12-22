@@ -125,7 +125,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	height: 610px;
 	border: 0px solid white;
 	top: -11%;
-	left: -12%;
+	left: -11%;
 	text-align: center;
 	transform: rotate(var(--rotation));
 }
@@ -139,7 +139,7 @@ a:active { text-decoration: none; color:  #D9D9D9;}
 	top:0%;
 	left: 50%;
 	width: 1px;
-	height: 50%;
+	height: 60%;
 	background: linear-gradient(0deg, green, 10%, white);
 }
 .clock .line2 {

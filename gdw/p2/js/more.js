@@ -1,3 +1,5 @@
+/* CALCULATE EQUINOX & SOLSTICES */
+
 'use strict';
 
 // converts julian day to Date object

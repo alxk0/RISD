@@ -1,4 +1,4 @@
-/* DATE */
+/* TIME OF DAY COMPONENT */
 
 var dt = new Date();
 
