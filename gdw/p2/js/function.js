@@ -76,7 +76,7 @@ class ProgClock {
 			const h_progress = (min + m_progress) / 60;
 			const d_progress = (hr + h_progress) / 24;
 			/* RADIAL COMPONENT */
-			const y_progress = ((day - 21) + (month - 11)) / 365;
+			const y_progress = ((day + 9) + (month)) / 365;
 			const y = 0;
 			/* const mo_progress = ((day - 1) + d_progress) / monthInfo.days; */
 			/* const mo_progress = ((day + 1) + d_progress) / monthInfo.days; */
