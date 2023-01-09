@@ -5,14 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-* {
+*
+{
 	margin-left: 5;
 	margin-top: 0;
 	padding: 0;
 	box-sizing: border-box;
 	background-color: #F9F8F5;
 	font-family: 'Roboto Mono', sans-serif;
-	font-size: min(max(1rem, 4.35vw), 13px);
+	font-size: min(max(1rem, 4.35vw), 14px);
 	font-weight: 400;
 	line-height: 1.0;
 	letter-spacing: 0.0px; 
@@ -21,7 +22,7 @@
 }
 a:link { text-decoration: none;}
 a:visited { text-decoration: none;}
-a:hover { text-decoration: none; color: #F9F8F5; background-color: #212121; }
+a:hover { text-decoration: none; color: #F9F8F5; background-color: fuchsia; }
 a:active { text-decoration: none; color:  #212121;}
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: #1B1B1B; }
@@ -30,20 +31,20 @@ a:active { text-decoration: none; color:  #212121;}
 .wrapper {
 	display: grid;
   	grid-template-columns: 1fr;
-  	border: 1px solid green;
+  	border: 0px solid green;
   	width: 99vw;
   	height: 99vh;
   	justify-items: center; /* adjusted */
 }
 .grid {
-	width: 65%;
+	width: 60%;
 }
 .grid > div {
 	border: 0px solid red;
 }
 .title {
 	font-family: Barlow, sans-serif; 
-	font-size: 19px;
+	font-size: 22px;
 	font-weight: 600;
 	padding-top: 16px;
 	letter-spacing:1px;
@@ -52,25 +53,6 @@ a:active { text-decoration: none; color:  #212121;}
 hr {
 	 margin-top:6px;
 	 margin-bottom:6px;
-}
-.accordion {
-	cursor: pointer;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	transition: 0.4s;
-}
-.active, .accordion:hover { background-color: cyan; }
-.panel {
-	display: grid;
-	max-height: 0px;
-	overflow: hidden; 
-	transition: max-height 0.2s ease-out;
-	border: 0px solid green;
-	font-family: 'Noto Serif';
-	font-size: 14px;
-	line-height: 1.2;
 }
 @media screen and (max-width: 768px) {
   .grid { width: 100%; }
