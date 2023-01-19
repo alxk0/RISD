@@ -30,7 +30,7 @@ a:active { text-decoration: none; color:  #212121;}
 .wrapper {
 	display: grid;
   	grid-template-columns: 1fr;
-  	border: 0px solid green;
+  	border: 1px solid green;
   	max-width:7000px
   	height: 99vh;
   	justify-items: center; /* adjusted */
@@ -40,10 +40,10 @@ a:active { text-decoration: none; color:  #212121;}
 	display: grid;
 	grid-template-columns: 1.0fr 6fr 1.0fr;
 	grid-template-rows: auto;
-	border: 0px solid purple;
+	border: 1px solid purple;
 }
 .grid > div {
-	border: 0px solid red;
+	border: 1px solid red;
 }
 .title {
 	font-family: Barlow, sans-serif; 
