@@ -37,7 +37,6 @@ a:active { text-decoration: none; color:  #212121;}
 	justify-items: center; /* adjusted */
 }
 .grid {
-	max-width: 714px;
 	border:0px solid blue;
 	margin-left: 5px;
 }

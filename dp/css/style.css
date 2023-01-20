@@ -14,51 +14,65 @@
 	font-family: 'Roboto Mono', sans-serif;
 	font-size: min(max(1rem, 4.35vw), 13px);
 	font-weight: 400;
-	line-height: 1.0;
+	line-height: 1.4;
 	letter-spacing: 0.0px; 
 	color: #1B1B1B;
 	overflow-x: none;
 }
 a:link { text-decoration: none;}
 a:visited { text-decoration: none;}
-a:hover { text-decoration: none; color: #F9F8F5; background-color: #212121; }
+a:hover { text-decoration: none; color: #F9F8F5; background-color: fuchsia; }
 a:active { text-decoration: none; color:  #212121;}
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: #1B1B1B; }
 ::-webkit-scrollbar-thumb { background: #D9D9D9; }
 ::-webkit-scrollbar-thumb:hover { background: #D9D9D9; }
 .wrapper {
-	display: grid;
+		display: grid;
   	grid-template-columns: 1fr;
-  	border: 1px solid green;
-  	max-width:7000px
-  	height: 99vh;
+  	width:99vw;
   	justify-items: center; /* adjusted */
+  	border: 0px solid blue;
 }
 .grid {
-	width:100%;
 	display: grid;
-	grid-template-columns: 1.0fr 6fr 1.0fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: auto;
-	border: 1px solid purple;
+	border: 0px solid purple;
 }
 .grid > div {
-	border: 1px solid red;
+	border: 0px solid red;
+	box-sizing: border-box;
 }
 .title {
 	font-family: Barlow, sans-serif; 
 	font-size: 19px;
-	font-weight: 600;
+	font-weight: 500;
 	padding-top: 16px;
-	letter-spacing: 0px;
-	max-width: 1000px;
+	letter-spacing: 1px;
 }
-.center  { max-width: 1000px; }
-.responsive{ width: 100%; }
+.center  { max-width:1000px;}
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	border: 0px solid purple;
+	gap:16px;
+}
+.content > div {
+	border: 0px solid red;
+	box-sizing: border-box;
+	text-align: justify;
+	text-justify: auto;
+}
+.t {
+	font-weight: 500;
+}
 hr {
 	 margin-top:6px;
 	 margin-bottom:6px;
 }
+.responsive{ width: 100%; }
 .accordion {
 	cursor: pointer;
 	width: 100%;
@@ -74,9 +88,6 @@ hr {
 	overflow: hidden; 
 	transition: max-height 0.2s ease-out;
 	border: 0px solid green;
-	font-family: 'Noto Serif';
-	font-size: 14px;
-	line-height: 1.2;
 }
 @media screen and (max-width: 768px) {
   .grid { width: 100%; }
