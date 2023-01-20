@@ -39,6 +39,7 @@ a:active { text-decoration: none; color:  #212121;}
 .grid {
 	border:0px solid blue;
 	margin-left: 5px;
+	max-width: 720px;
 }
 .grid > div { border: 0px solid red; }
 .title {
