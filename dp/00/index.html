@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DATA SET 1</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    body {
+      background-color: #FAFAFA;
+      margin-left: 16px;
+      margin-top: 16px;
+      box-sizing: border-box;
+      color: #212121;
+      font-family: 'IBM Plex Mono', sans-serif;
+      font-size: min(max(1rem, 4.35vw), 12px);
+      font-weight: 400;
+      line-height: 1.2em;
+      letter-spacing: 0.2px; 
+      overflow-x: none;
+    }
+    .draggable {
+      display: inline-block;
+      position: absolute;
+      font-color: #212121;
+      text-align: center;
+      border: 1px solid black;
+      padding: 8px;
+      white-space: nowrap;
+      width: 320px;
+      padding: 10px 2px 20px 2px;
+      border: 1px solid #BFBFBF;
+      background-color: white;
+    }
+    .draggable-header {
+      cursor: move;
+      color: #212121;
+    }
+    img {
+      max-width: 300px;
+    }
+    .d00 { box-shadow: 2px 2px fuchsia, 4px 4px cyan; }
+    .d01 { box-shadow: 2px 2px cyan, 4px 4px black; }
+    .d02 { box-shadow: 2px 2px greenyellow, 4px 4px fuchsia; }
+    .d03 { box-shadow: 2px 2px cyan, 4px 4px greenyellow; }
+    .d04 { box-shadow: 2px 2px black, 4px 4px greenyellow; }
+    .d05 { box-shadow: 2px 2px fuchsia, 4px 4px greenyellow; }
+    .d06 { box-shadow: 2px 2px cyan, 4px 4px fuchsia; }
+    .d07 { box-shadow: 2px 2px greenyellow, 4px 4px greenyellow; }
+    .d08 { box-shadow: 2px 2px fuchsia, 4px 4px greenyellow; }
+    .d09 { box-shadow: 2px 2px cyan, 4px 4px greenyellow; }
+    .d10 { box-shadow: 2px 2px greenyellow, 4px 4px greenyellow; }
+    .d11 { box-shadow: 2px 2px fuchsia, 4px 4px black; }
+    .d12 { box-shadow: 2px 2px cyan, 4px 4px fuchsia; }
+    .d13 { box-shadow: 2px 2px greenyellow, 4px 4px cyan; }
+    .d14 { box-shadow: 2px 2px fuchsia, 4px 4px greenyellow; }
+    .d15 { box-shadow: 2px 2px cyan, 4px 4px greenyellow; }
+    .d16 { box-shadow: 2px 2px greenyellow, 4px 4px greenyellow; }
+    #div0 { top: 100px; left: 20px; }
+    #div1 { top: 137px; left: 20px; }
+    #div2 { top: 174px; left: 20px; }
+    #div3 { top: 211px; left: 20px; }
+    #div4 { top: 248px; left: 20px; }
+    #div5 { top: 285px; left: 20px; }
+    #div6 { top: 322px; left: 20px; }
+    #div7 { top: 359px; left: 20px; }
+    #div8 { top: 396px; left: 20px; }
+    #div9 { top: 433px; left: 20px; }
+    #div10 { top: 470px; left: 20px; }
+    #div11 { top: 507px; left: 20px; }
+    #div12 { top: 544px; left: 20px; }
+    #div13 { top: 581px; left: 20px; }
+    #div14 { top: 618px; left: 20px; }
+    #div15 { top: 655px; left: 20px; }
+    #div16 { top: 692px; left: 20px; }
+    #div17 { top: 729px; left: 20px; }
+    #div18 { top: 766px; left: 20px; }
+    #div19 { top: 803px; left: 20px; }
+    #div20 { top: 840px; left: 20px; }
+    #div21 { top: 877px; left: 20px; }
+    #div22 { top: 914px; left: 20px; }
+    #div23 { top: 951px; left: 20px; }
+    #div24 { top: 988px; left: 20px; }
+    #div25 { top: 1025px; left: 20px; }
+    #div26 { top: 1062px; left: 20px; }
+    #div27 { top: 1099px; left: 20px; }
+    #div28 { top: 1136px; left: 20px; }
+    #div29 { top: 1173px; left: 20px; }
+    #div30 { top: 1210px; left: 20px; }
+    #div31 { top: 1247px; left: 20px; }
+    #div32 { top: 1284px; left: 20px; }
+    #div33 { top: 1321px; left: 20px; }
+    #div34 { top: 1358px; left: 20px; }
+    #div35 { top: 1395px; left: 20px; }
+    #div36 { top: 1432px; left: 20px; }
+    #div37 { top: 1469px; left: 20px; }
+    #div38 { top: 1506px; left: 20px; }
+    #div39 { top: 1543px; left: 20px; }
+    #div40 { top: 1580px; left: 20px; }
+    #div41 { top: 1617px; left: 20px; }
+    #div42 { top: 1654px; left: 20px; }
+    #div43 { top: 1691px; left: 20px; }
+    #div44 { top: 1728px; left: 20px; }
+    #div45 { top: 1765px; left: 20px; }
+    #div46 { top: 1802px; left: 20px; }
+    #div47 { top: 1839px; left: 20px; }
+    #div48 { top: 1876px; left: 20px; }
+    #div49 { top: 1913px; left: 20px; }
+    #div50 { top: 1950px; left: 20px; }
+  </style>
+</head>
+<body>
+
+  <span style="font-size: 20px">DATASET_1</span>
+
+  <p>Click and hold the mouse button down while moving the elements</p>
+
+  <div id="div0" class="draggable d00">
+    <div class="draggable-header">00. PLACES</div>
+    <p><img src="00.png"></p>
+    Sanjūsangen-dō｜三十三間堂
+  </div>
+  <div id="div1" class="draggable d00">
+    <div class="draggable-header">00. PLACES</div>
+    <p><img src="01.png"></p>
+    Painted Hills | Oregon
+  </div>
+  <div id="div2" class="draggable d00">
+    <div class="draggable-header">00. PLACES</div>
+    <p><img src="02.png"></p>
+    Gion, Kyoto | 祇園
+  </div>
+  <div id="div3" class="draggable d01">
+    <div class="draggable-header">01. HUGE OBJECTS</div>
+    <p><img src="03.png"></p>
+    Giant Sequoia Trees
+  </div>
+  <div id="div4" class="draggable d01">
+    <div class="draggable-header">01. HUGE OBJECTS</div>
+    <p><img src="04.png"></p>
+    The Stars
+  </div>
+  <div id="div5" class="draggable d01">
+    <div class="draggable-header">01. HUGE OBJECTS</div>
+    <p><img src="05.png"></p>
+    The Oregon Coast
+  </div>
+  <div id="div6" class="draggable d02">
+    <div class="draggable-header">02. TINY OBJECTS</div>
+    <p><img src="06.png"></p>
+    Flash Drive
+  </div>
+  <div id="div7" class="draggable d02">
+    <div class="draggable-header">02. TINY OBJECTS</div>
+    <p><img src="07.png"></p>
+    A Key
+  </div>
+  <div id="div8" class="draggable d02">
+    <div class="draggable-header">02. TINY OBJECTS</div>
+    <p><img src="08.png"></p>
+    A Penny
+  </div>
+  <div id="div9" class="draggable d03">
+    <div class="draggable-header">03. FEARS</div>
+    <p><img src="09.png"></p>
+    Social Media
+  </div>
+  <div id="div10" class="draggable d03">
+    <div class="draggable-header">03. FEARS</div>
+    <p><img src="10.png"></p>
+    Smartphone
+  </div>
+  <div id="div11" class="draggable d03">
+    <div class="draggable-header">03. FEARS</div>
+    <p><img src="11.png"></p>
+    Fear
+  </div>
+  <div id="div12" class="draggable d04">
+    <div class="draggable-header">04. DELIGHTS</div>
+    <p><img src="12.png"></p>
+    Black Coffee
+  </div>
+  <div id="div13" class="draggable d04">
+    <div class="draggable-header">04. DELIGHTS</div>
+    <p><img src="13.png"></p>
+    Keurig Machine
+  </div>
+  <div id="div14" class="draggable d04">
+    <div class="draggable-header">04. DELIGHTS</div>
+    <p><img src="14.png"></p>
+    Brazilian Jiu-Jitsu
+  </div>
+  <div id="div15" class="draggable d05">
+    <div class="draggable-header">05. SUPERMARKET</div>
+    <p><img src="15.png"></p>
+    Brussel Sprouts
+  </div>
+  <div id="div16" class="draggable d05">
+    <div class="draggable-header">05. SUPERMARKET</div>
+    <p><img src="16.png"></p>
+    Coffee
+  </div>
+  <div id="div17" class="draggable d05">
+    <div class="draggable-header">05. SUPERMARKET</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div18" class="draggable d06">
+    <div class="draggable-header">06. HARDWARE STORE</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div19" class="draggable d06">
+    <div class="draggable-header">06. HARDWARE STORE</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div20" class="draggable d06">
+    <div class="draggable-header">06. HARDWARE STORE</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div21" class="draggable d07">
+    <div class="draggable-header">07. ABSTRACT</div>
+    <p><img src="21.png"></p>
+    Kengo Kuma<br>(‘The Future of Architecture’)
+  </div>
+  <div id="div22" class="draggable d07">
+    <div class="draggable-header">07. ABSTRACT</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div23" class="draggable d07">
+    <div class="draggable-header">07. ABSTRACT</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div24" class="draggable d08">
+    <div class="draggable-header">08. PHYSICAL</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div25" class="draggable d08">
+    <div class="draggable-header">08. PHYSICAL</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div26" class="draggable d08">
+    <div class="draggable-header">08. PHYSICAL</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div27" class="draggable d09">
+    <div class="draggable-header">09. PEOPLE</div>
+    <p><img src="27.png"></p>
+    Dan Shiffman (NYU ITP)
+  </div>
+  <div id="div28" class="draggable d09">
+    <div class="draggable-header">09. PEOPLE</div>
+    <p><img src="28.png"></p>
+    Stanley Kubrick
+  </div>
+  <div id="div29" class="draggable d09">
+    <div class="draggable-header">09. PEOPLE</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div30" class="draggable d10">
+    <div class="draggable-header">10. EVENTS</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div31" class="draggable d10">
+    <div class="draggable-header">10. EVENTS</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div32" class="draggable d10">
+    <div class="draggable-header">10. EVENTS</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div33" class="draggable d11">
+    <div class="draggable-header">11. FILMS</div>
+    <p><img src="33.png"></p>
+    2001: A Space Odyssey (1968)
+  </div>
+  <div id="div34" class="draggable d11">
+    <div class="draggable-header">11. FILMS</div>
+    <p><img src="34.png"></p>
+    Instellar (2014)
+  </div>
+  <div id="div35" class="draggable d11">
+    <div class="draggable-header">11. FILMS</div>
+    <p><img src="35.png"></p>
+    Arrival (2016)
+  </div>
+  <div id="div36" class="draggable d12">
+    <div class="draggable-header">12. DESIGNERS</div>
+    <p><img src="36.png"></p>
+    Kengo Kuma (Architect)
+  </div>
+  <div id="div37" class="draggable d12">
+    <div class="draggable-header">12. DESIGNERS</div>
+    <p><img src="37.png"></p>
+    John Maeda (Designer - Technologist)
+  </div>
+  <div id="div38" class="draggable d12">
+    <div class="draggable-header">12. DESIGNERS</div>
+    <p><img src="38.png"></p>
+    Talia Cotton (Designer - Technologist)
+  </div>
+  <div id="div39" class="draggable d13">
+    <div class="draggable-header">13. ARTISTS</div>
+    <p><img src="39.png"></p>
+    Vera Molnár
+  </div>
+  <div id="div40" class="draggable d13">
+    <div class="draggable-header">13. ARTISTS</div>
+    <p><img src="40.png"></p>
+    Hiroshi Sugimoto (Photographer)
+  </div>
+  <div id="div41" class="draggable d13">
+    <div class="draggable-header">13. ARTISTS</div>
+    <p><img src="41.png"></p>
+    Edward Hopper (Painter)
+  </div>
+  <div id="div42" class="draggable d14">
+    <div class="draggable-header">14. BOOKS</div>
+    <p><img src="42.png"></p>
+    Programming Design Systems<br>programmingdesignsystems.com
+  </div>
+  <div id="div43" class="draggable d14">
+    <div class="draggable-header">14. BOOKS</div>
+    <p><img src="43.png"></p>
+    Code as Creative Medium (2021)
+  </div>
+  <div id="div44" class="draggable d14">
+    <div class="draggable-header">14. BOOKS</div>
+    <p><img src="44.png"></p>
+    How to Speak Machine by John Maeda
+  </div>
+  <div id="div45" class="draggable d15">
+    <div class="draggable-header">15. WEBSITES</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div46" class="draggable d15">
+    <div class="draggable-header">15. WEBSITES</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div47" class="draggable d15">
+    <div class="draggable-header">15. WEBSITES</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div48" class="draggable d16">
+    <div class="draggable-header">16. LINKS</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div49" class="draggable d16">
+    <div class="draggable-header">16. LINKS</div>
+    <p>HELLO</p>
+  </div>
+  <div id="div50" class="draggable d16">
+    <div class="draggable-header">16. LINKS</div>
+    <p>HELLO</p>
+  </div>
+
+  <script>
+    // Make any element with class "draggable" draggable:
+    var elements = document.querySelectorAll(".draggable");
+    for (var i = 0; i < elements.length; i++) {
+      makeDraggable(elements[i]);
+    }
+
+    function makeDraggable(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      var header = elmnt.querySelector(".draggable-header");
+      if (header) {
+        header.onmousedown = dragMouseDown;
+      } else {
+        elmnt.onmousedown = dragMouseDown;
+      }
+
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        document.onmousemove = elementDrag;
+      }
+
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+
+      function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+  </script>
+</body>
+</html>
