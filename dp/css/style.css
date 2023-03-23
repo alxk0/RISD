@@ -19,7 +19,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	background-color: #F7DBD8;
-	overflow-x: none;
 	height: 200px;
 }
 body {
@@ -28,6 +27,7 @@ body {
 	font-weight: 500;
 	line-height: 1.4;
 	letter-spacing: 0.0px; 
+	overflow-x: hidden;
 	color: #2A2F37;
 }
 a:link { text-decoration: none; color: #2A2F37;}
